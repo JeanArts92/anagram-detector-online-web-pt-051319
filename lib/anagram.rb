@@ -11,7 +11,7 @@ class Anagram
   
   def match(array)
     new = @word.split("").sort
-    array.map{|anagram| anagram.split("").sort == new}
+    array.collect{|anagram| anagram.split("").sort == new}
   #new = anagram.split("").sort
   #new_word = @word.split.sort
   

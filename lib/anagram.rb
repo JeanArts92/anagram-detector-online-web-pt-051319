@@ -11,12 +11,12 @@ class Anagram
   
   def match(array)
     new = @word.split("").sort
-    array.collect{|anagram| anagram.split("").sort == new}
+    last = array.collect{|anagram| anagram.split("").sort == new}
   #new = anagram.split("").sort
   #new_word = @word.split.sort
   
   
   #binding.pry
   end
-  
+  last
 end

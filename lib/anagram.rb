@@ -10,12 +10,13 @@ class Anagram
   end 
   
   def match(array)
-  array.map do |anagram|
-  new = anagram.split("").sort
-  new_word = @word.split.sort
+    new = @word.split("").sort
+    array.map{|anagram| anagram.split("").sort == @word}
+  #new = anagram.split("").sort
+  #new_word = @word.split.sort
   
   
-  binding.pry
+  #binding.pry
    end 
   end
   
